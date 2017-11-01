@@ -41,6 +41,9 @@ var count = 3.5
  * 如:用户资料的选填部分，如住址/性别等辅助信息
  * 形式:var 变量:类型 ? ,无值则是null
  */
+
+
+
 fun main(args: Array<String>) {
     print("每天都跑${run}公里\n")
     print("圆周率${pi}")
@@ -54,4 +57,16 @@ fun main(args: Array<String>) {
     val (day,method,course) = Triple(3,"Learning","Kotlin Programming");
     val fee = Pair("学费",0)
     print("${day}天${method}${course}${fee.first}${fee.second}\n")
+
+    var addr:String = "shanghaishifandaxue"
+    var sex:Boolean?
+    if (addr != null){
+        print("您的地址是${addr}")
+    }
+    sex = false
+    if (sex != null) {
+        print("sex?${sex}")
+    }
+
+    
 }
